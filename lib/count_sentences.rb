@@ -15,6 +15,8 @@ class String
   end
 
   def count_sentences
-    self.count ".?!", "^!!.."
+    count = self.split(/[.+?+!+]/)
+    count.delete("")
+    count.length
   end
 end
