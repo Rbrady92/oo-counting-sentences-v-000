@@ -15,7 +15,6 @@ class String
   end
 
   def count_sentences
-    str = self
-    str.count ".?!"
+    self.count ".?!"
   end
 end
